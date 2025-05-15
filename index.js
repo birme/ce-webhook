@@ -15,8 +15,8 @@ app.get('/nextVod', (request, reply) => {
     id: randomUUID(),
     title: 'Example',
     hlsUrl: vods[Math.floor(Math.random() * vods.length)],
-    prerollUrl: 'https://lab.cdn.eyevinn.technology/osc/osc-reel/a4e1156e-f872-455f-9f1f-be73b5effba8/index.m3u8',
-    prerollDurationMs: 63000
+    prerollUrl: 'https://maitv-vod.lab.eyevinn.technology/VINN.mp4/master.m3u8',
+    prerollDurationMs: 105000
   };
   reply.send(vodResponse);
 });
